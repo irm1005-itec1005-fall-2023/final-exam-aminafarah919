@@ -1,46 +1,304 @@
-/*
- * CSS File for the solution
- * Final Exam
- * You got this!
- */
+.page-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1.0rem;
+}
 
-/*
- * COLOUR PALETTE
- *
- * YOU DO NOT NEED TO USE THESE COLOURS, BUT YOU CAN IF YOU WANT TO
- *
- * #cdb4db - Lavender Purple
- * #ffc8dd - Pink
- * #ffafcc - Light Pink
- * #bde0fe - Light Blue
- * #a2d2ff - Light Blue
- * #0c0a3e - Dark Purple
- * #797979 - Grey
- *
- * https://coolors.co/palette/cdb4db-ffc8dd-ffafcc-bde0fe-a2d2ff
- */
-
-/*
- * FOR YOUR DESKTOP VIEWPORT I WOULD RECOMMEND THE FOLLOWING MEDIA QUERY
- *
- * @media screen and (min-width: 800px) {
- *    ... your styles here ...
- * }
- */
-
- html {
+html {
   font-size: 1.0rem;
 }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-
-  background-color: #f7ead7;
+  background-color: rgb(254, 221, 221);
+  margin: 0;
+  padding: 0;
 }
 
-/*
- * SR-ONLY
- */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+  height: 50px;
+}
+
+header img {
+  max-height: 100%;
+  background-color: rgb(3, 3, 3);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+header a {
+  margin-left: auto;
+}
+
+.hidden-text {
+  display: none;
+}
+
+.btn1 {
+  background-color: rgb(8, 8, 8);
+  color: white;
+  border-radius: 8px;
+  border: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: #030305;
+  padding-top: 10rem;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 10px;
+  font-weight: bold;
+  color: #76767b;
+  padding-bottom: 5rem;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
+#about-me {
+  text-align: center;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+
+#about-me img.bio-image {
+  width: 430px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.bio-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#about-me .bio-text {
+  max-width: 700px;
+  margin-left: 20px;
+  text-align: left;
+  padding-right: 5rem;
+}
+
+.Biotitle {
+  font-size: 30px;
+  font-weight: bold;
+  color: #0c0a3e;
+}
+
+.bioparagraph {
+  font-size: 15px;
+  color: #0c0a3e;
+  padding-bottom: 2rem;
+}
+
+.btn2 {
+  background-color: rgb(237, 167, 190);
+  color: black;
+  border-radius: 8px;
+  border: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#skills {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.skill-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#skills {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  justify-content: center;
+  text-align: left;
+  align-items: center;
+  margin-left: 20rem;
+  margin-right: 20rem;
+}
+
+.skill-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.skill-row {
+  display: flex;
+}
+
+.skill-item {
+  flex: 1;
+  padding: 10px;
+  margin: 3px;
+  border-radius: 5px;
+  justify-self: center;
+  text-align: left;
+  font-weight: bold;
+}
+
+.ui-ux {
+  flex: 0.5;
+  background-color: #deb3ef;
+  padding-top: 13rem;
+  padding-left: 2rem;
+}
+
+.css {
+  flex: 0.5;
+  background-color: skyblue;
+  color: #fff;
+  padding-top: 5rem;
+  padding-right: 2rem;
+}
+
+.javascript,
+.web-development {
+  flex: 1;
+  background-color: pink;
+  padding-top: 5rem;
+}
+
+.html {
+  flex: 1;
+  background-color: #a375b8;
+  color: #fff;
+  padding-top: 4rem;
+  padding-right: 6rem;
+}
+
+.github {
+  flex: 1;
+  background-color: rgb(93, 169, 199);
+  color: #fff;
+  padding-top: 4rem;
+  padding-right: 6rem;
+}
+
+.web-development {
+  flex: 2;
+  background-color: lightpink;
+  color: #fff;
+  padding-top: 15rem;
+  padding-left: 20rem;
+  text-align: center;
+}
+
+.mywork {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#my-work {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin: 0 auto;
+  max-width: 800px;
+  margin-bottom: 5px;
+}
+
+.work-item {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin: 0 10px;
+  margin-top: 100px;
+  align-items: ;
+}
+
+.work-image {
+  height: 250px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.tutorial {
+  font-style: bold;
+}
+
+.work-details {
+  padding: 15px;
+  background-color: rgb(240, 142, 159);
+}
+
+.chatbox {
+  margin-top: 2rem;
+  background-color: plum;
+  margin-left: 1rem;
+  padding: 20px;
+  border-radius: 2rem;
+}
+
+.para {
+  font-size: 15px;
+  color: #0c0a3e;
+  padding-bottom: 2rem;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+footer img {
+  max-width: 20px; 
+  margin-right: 10px; 
+  
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+}
 .sr-only {
   position: absolute;
   width: 1px;
@@ -51,19 +309,4 @@ body {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
- }
-
-
-/*
- * SHARED STYLES
- */
-
-.page-container {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 0 1.0rem;
 }
-
-/*
- * ADD YOUR STYLES HERE
- */
